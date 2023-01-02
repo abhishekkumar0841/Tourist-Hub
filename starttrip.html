@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+      <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body{
+            font-size: 14px;
+            background-color: rgba(27, 31, 34, 0.85);
+        }
+
+        .container{
+            background: white;
+            width: 500px;
+            padding: 25px;
+            margin: 50px auto 0;
+            border-top: 5px solid #000;
+            box-shadow: 0 0 7px 5px rgba(255, 255, 255, 0.558);
+        }
+
+        .container h2{
+            font-size: 25px;
+            line-height: 25px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .input-name{
+            width: 90%p;
+            position: relative;
+            margin: 20px auto;
+        }
+
+        .lock{
+            padding: 8px 11px;
+        }
+
+        .name{
+            width: 45%;
+            padding: 8px 0 8px 40px;
+        }
+
+        .input-name span{
+            margin-left: 35px;
+        }
+
+        .text-name{
+            width: 100%;
+            padding: 8px 0 8px 40px;
+        }
+
+        .input-name i{
+            position: absolute;
+            font-size: 18px;
+            color: blue;
+            border-right: 1px solid #cccccc;
+        }
+
+        .email{
+            padding: 8px;
+        }
+
+        .text-name, .name{
+            border: 1px solid #cccccc;
+            outline: none;
+        }
+
+        .text-name:hover, .name:hover{
+            background-color: #f7f7f7;
+        }
+
+        .text-name:focus, .name:focus{
+            border: 1px solid blue;
+        }
+
+        .radio-button{
+            margin: 8px;
+        }
+
+        .country{
+            display: inline-block;
+            width: 100%;
+            height: 35px;
+            padding: 0 15px;
+            cursor: pointer;
+            border: 1px solid #cccccc;
+            color: 7b7b7b;
+            border-radius: 0;
+            background: white;
+        }
+
+        .country:hover{
+            color: blue;
+            background: #fafafa;
+            border-color: blue;
+            outline: none;
+        }
+
+        .check-button{
+            font-size: 50;
+        }
+
+        .button{
+            background: greenyellow;
+            width: 25%;
+            height: 40px;
+            margin-left: 40%;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        .button:hover{
+            background: #000;
+            color: greenyellow;
+        }
+
+
+
+      </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Fill This Registration Form & Start Your Trip</h2>
+        <div class="form-container">
+            <form>
+
+                <div class="input-name">
+                    <i class="fa fa-user lock"></i>
+                    <input type="text" placeholder="First Name" class="name">
+
+                    <span>
+                        <i class="fa fa-user lock"></i>
+                        <input type="text" placeholder="Last Name" class="name">
+                    </span>
+                </div>
+
+                <div class="input-name">
+                    <i class="fa fa-envelope email"></i>
+                    <input type="email" placeholder="abc@def.com" class="text-name">
+                </div>
+
+                <div class="input-name">
+                    <i class="fa fa-lock email"></i>
+                    <input type="password" placeholder="Enter Password" class="text-name">
+                </div>
+
+                <div class="input-name">
+                    <i class="fa fa-lock email"></i>
+                    <input type="password" placeholder="Confirm Password" class="text-name">
+                </div>
+
+                <div class="input-name">
+                    <input type="radio" class="radio-button" name="gender">
+                    <label style="margin-right: 30px;">Male</label>
+
+                    <input type="radio" class="radio-button" name="gender">
+                    <label>Female</label>
+                </div>
+
+                <div class="input-name">
+                    <select class="country">
+                        <option>Select Your Country</option>
+                        <option>Afgnistan</option>
+                        <option>Australia</option>
+                        <option>Bangladesh</option>
+                        <option>Bhutan</option>
+                        <option>China</option>
+                        <option>Canada</option>
+                        <option>England</option>
+                        <option>New Zealand</option>
+                        <option>Nepal</option>
+                        <option>Sri Lanka</option>
+                        <option>UAE</option>
+                        <option>Others</option>
+                    </select>
+                    <div class="arrow"></div>
+
+                </div>
+
+                <div class="input-name">
+                    <input type="checkbox" class="check-button">
+                    <label>I accept all the terms and conditions</label>
+                </div>
+
+                <div class="input-name">
+                    <input type="submit" formaction="submit.html" class="button" value="SUBMIT">
+                    
+                </div>
+
+
+
+
+            </form>
+        </div>
+            
+    </div>
+
+</body>
+</html>

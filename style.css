@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.5)), url("agra.jpg");
+    background-size: cover;
+   background-position: center;
+   transition: 30s;
+
+   animation-name: animate;
+   animation-direction: alternate-reverse;
+   animation-duration: 30s;
+   animation-fill-mode: forwards;
+   animation-iteration-count: infinite;
+   animation-play-state: running;
+   animation-timing-function: ease-in-out;
+}
+
+@keyframes animate{
+    0%{
+        background-image: url("agra.jpg");
+    }
+    20%{
+        background-image: url("delhi.jpg");
+    }
+    40%{
+        background-image: url("mumbai.jpg");
+    }
+    60%{
+        background-image: url("bihar.jpg");
+    }
+    80%{
+        background-image: url("kerala.jpg");
+    }
+    100%{background-image: url("darjilling.jpg");
+    }
+}
+
+nav{
+    width: 100%;
+    height: 15vh;
+    background-color: rgba(0,0,0,0.1);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo{
+    width: 28%;
+    text-align: center;
+    font-size: 45px;
+    color: yellow;
+    margin-left: 50px;
+    background: rgba(255, 255, 255, 0.41);
+    text-shadow: 1px 1px 1px black;
+    border-radius: 20px;
+}
+
+nav .logo:hover{
+    color: rgba(255, 255, 255, 0.41);
+    background: rgba(255, 255, 0, 0.625);
+    transition: all .5s ease;
+}
+
+nav .menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 50px;    
+}
+
+
+nav .menu a{
+    width: 25%;
+    margin-right: 70px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px black;
+    transition: all .5s ease;
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+nav .menu a:hover{
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+}
+
+#active{
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+}
+
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+#hindi{
+    color: rgb(255, 165, 0);
+}
+
+section h3{
+    font-size: 45px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+    font-weight: bold;
+    color: white
+}
+
+section h1{
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 1000px;
+    text-shadow: 2px 1px 2px black;
+    text-transform: uppercase;
+    color: rgb(89, 238, 19);
+}
+
+
+
+section p{
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bolder;
+}
+
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+
+section .btnone{
+    background: transparent;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 20px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+}
+
+.btnone:hover{
+    color: #000;
+    background: #fff;
+}
+
+.btntwo:hover{
+    color: #000;
+    background: #fff;
+}
+
+section .btntwo{
+    background: transparent;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 20px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+}
+
+.change_content:after{
+    content: '';
+    animation: changetext 30s infinite;
+
+   animation-name: changetext;
+   animation-direction: alternate-reverse;
+   animation-duration: 30s;
+   animation-fill-mode: forwards;
+   animation-iteration-count: infinite;
+   animation-play-state: running;
+   animation-timing-function: ease-in-out;
+}
+
+@keyframes changetext{
+    
+    0%{content:"Agra"}      
+    20%{content:"Delhi"}
+    40%{content:"Mumbai"}
+    60%{content:"Bihar"}
+    80%{content:"Kerala"}
+    100%{content:"Darjeeling"}
+}
+
+
+@media only screen and (min-width: 200px) and (max-width: 567px){
+    nav .logo{
+        font-size: 10px;
+        margin-left: 10px;
+    }
+
+    section h1{
+        font-size: 20px;
+    }
+
+    section h3{
+        font-size: 25px;
+    }
+
+    header{
+        width: 100%;
+        height: 100%;
+    }
+
+    section p{
+        font-size: 15px;
+    }
+
+    section .btnone{
+        font-size: 10px;
+    }
+
+    section .btntwo{
+        font-size: 10px;
+    }
+
+    nav .menu a{
+        width: 25%;
+        margin-right: 5px;
+        font-size: 11px;
+    }
+
+    nav .menu{
+        position: relative;
+        width: 80%;
+        margin-left: 12px;   
+    }
+
+}
+
+@media only screen and (min-width: 568px) and (max-width: 768px){
+    nav .logo{
+        font-size: 10px;
+        margin-left: 10px;
+    }
+
+    section h1{
+        font-size: 20px;
+    }
+
+    section h3{
+        font-size: 25px;
+    }
+
+    header{
+        width: 100%;
+        height: 100%;
+    }
+
+    section p{
+        font-size: 15px;
+    }
+
+    section .btnone{
+        font-size: 10px;
+    }
+
+    section .btntwo{
+        font-size: 10px;
+    }
+
+    nav .menu a{
+        width: 25%;
+        margin-right: 5px;
+        font-size: 11px;
+    }
+
+    nav .menu{
+        position: relative;
+        width: 80%;
+        margin-left: 12px;   
+    }
+}
+
+
